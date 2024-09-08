@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار لوشير</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>اختبار لوشير</h1>
+    <div class="color-picker">
+        <h2>اختر الألوان التي تفضلها</h2>
+        <div class="color-option" data-color="red" style="background-color: red;"></div>
+        <div class="color-option" data-color="yellow" style="background-color: yellow;"></div>
+        <div class="color-option" data-color="blue" style="background-color: blue;"></div>
+        <div class="color-option" data-color="green" style="background-color: green;"></div>
+        <div class="color-option" data-color="brown" style="background-color: brown;"></div>
+        <div class="color-option" data-color="gray" style="background-color: gray;"></div>
+        <div class="color-option" data-color="orange" style="background-color: orange;"></div>
+        <div class="color-option" data-color="white" style="background-color: white; border: 1px solid #ccc;"></div>
+        <div class="color-option" data-color="black" style="background-color: black;"></div>
+    </div>
+    <form id="color-form" action="https://formspree.io/f/xeojdnzp" method="POST">
+        <input type="hidden" name="colors" id="colors">
+        <button type="submit">تقديم الاختيار</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
